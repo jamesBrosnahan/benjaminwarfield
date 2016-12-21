@@ -1,0 +1,77 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video { margin:0; padding:0; border:0; font-size:100%; font:inherit; vertical-align:baseline; }
+
+body {
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  font-size: 62.5%;
+  color: #727272;
+  background: #f5f1ea;
+}
+
+a {
+  color: #6d6968;
+}
+
+.callout {
+  font-size: 5.8em;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.2em;
+  font-family: "futura-pt-condensed", sans-serif;
+  color: #6d6968;
+  width: 100%;
+  -webkit-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.9);
+  -moz-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.9);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.9);
+}
+
+h1 {
+  font-size: 5.6em;
+  margin-bottom: 0.2em;
+  line-height: 1.0;
+  font-family: "futura-pt-condensed", sans-serif;
+  color: #6d6968;
+  width: 75%;
+  -webkit-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.9);
+  -moz-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.9);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.9);
+}
+
+h2 {
+  font-size: 2.6em;
+  margin-bottom: 0.2em;
+  line-height: 1.0em;
+  font-family: "futura-pt-condensed", sans-serif;
+  color: #6d6968;
+  width: 75%;
+  -webkit-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.9);
+  -moz-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.9);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.9);
+}
+
+.container {
+  max-width: 980px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.container .content {
+  position: relative;
+  padding: 6em 0 0 0;
+  margin-bottom: 0;
+  min-height: 400px;
+}
+
+.container .content .about {
+  font-size: 1.8em;
+  font-family: "futura-pt-condensed", sans-serif;
+}
+
+.around_the_web {
+  padding: 2em 0 0 1.5em;
+}
+
+.around_the_web li {
+  padding: .5em 0 0 0;
+  font-size: 1.8em;
+  font-family: "futura-pt-condensed", sans-serif;
+}
