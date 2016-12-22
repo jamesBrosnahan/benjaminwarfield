@@ -12,6 +12,7 @@ export const Navigation = () => (
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
           <li><Link href="/about">About</Link></li>
+          <li><Link href="/contact">Contact</Link></li>
           <li><Link href="/work">Work</Link></li>
         </ul>
       </div>

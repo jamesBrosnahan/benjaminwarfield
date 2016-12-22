@@ -8,6 +8,7 @@ import {Navigation} from './components/Navigation';
 import {Home} from './components/Home';
 import {About} from './components/About';
 import {Work} from './components/Work';
+import {Contact} from './components/Contact';
 import {Error} from './components/Error';
 
 const App = () => (
@@ -17,6 +18,7 @@ const App = () => (
       <Router>
         <Home path='/' />
         <About path='/about' />
+        <Contact path='/contact' />
         <Work path='/work' />
         <Error type='404' default />
       </Router>
