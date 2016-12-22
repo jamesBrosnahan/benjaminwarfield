@@ -1,6 +1,6 @@
 {
   "name": "benjaminwarfield",
-  "version": "0.0.1",
+  "version": "0.0.1rc1",
   "private": true,
   "devDependencies": {
     "autoprefixer": "6.4.0",
@@ -48,6 +48,7 @@
     "path-exists": "3.0.0",
     "postcss-loader": "0.9.1",
     "promise": "7.1.1",
+    "prompt": "^1.0.0",
     "react": "^15.4.1",
     "react-bootstrap": "^0.30.7",
     "react-deploy-s3": "^1.1.1",
