@@ -1,0 +1,18 @@
+language: node_js
+
+node_js:
+  - '0.11'
+  - '0.10'
+
+deploy:
+  - provider: script
+    script: npm run deploy -- --access-key-id $AWS_ACCESS_KEY_ID --secret-access-key $AWS_SECRET_ACCESS_KEY --bucket $BUCKET --region us-east-2 --distribution-id $CF_DISTRIBUTION
+    on:
+      tags: true
+
+env:
+  global:
+    BUCKET: www.benjaminwarfield.com
+    CF_DISTRIBUTION: E63B3GN2ROJDX
+    AWS_ACCESS_KEY_ID: AKIAISBYE23SLBWUMTLQ
+    secure: B3GVus4y75Mz6+XVPr9Cx2a9BdUuKw77eOpv+ViFNEORsQRIGOJpc2M1N6ASQ0o2WadQ7g9tatbne9DpFdlnl4oTRybzbIFxarrAtziQ9/8KHgVLB1xEBFi4FwW9NfGM3DKsC3+EgAOjtbweL94Ilc5nddUltr78/5PcZPMYKqBCr45yziub5KhwlH2oH3DkF6Qv8sXb4+M8Vovb8UszIxyiyXUglrV23r9Wl91ElwuH714Um8DkRIhYOrEHXsDF7F5FiKIzNCLCucaT4L1zcEvO3KAPWkEN5uUQaF9nEMvohYxG2tkzM12JHgR2g7B1ZYtq9ugGXAdmSyWOkDT6pC5xvo1cWndVqPg63xk1U/f4SAL/Hh0fwYB1n+JbH1p81Kywcn1m3XrvkcD3gp0gyqJ/kUk2sed/G7dl8fVSZPP32q6zdeCdi2CT4fTd6kc154Xzg7J1LVPtRpIUOrMKo7iCQRFiYpyCGFQr+yhPV4EZpxZuBJ6C73hLeMFKUTdHIuyfuyM0GewQs+z5g1XoxKeo4ANvnFJIsRziuhZYClrSWUPa9HdBYw1DpWy/LGUwpwig8+RW1DLdXadcR0Ud8JEIQ6tbF5krOYigU8yzLYxsABQLhfDxVZeX5UcjglgEkV2bQqaipURO2Go4keq47jZYFRNPH9ED458WRVSsQwc=
