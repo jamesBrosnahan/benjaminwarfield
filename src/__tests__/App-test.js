@@ -1,4 +1,4 @@
-import React from 'react';
+import {h} from 'preact';  /** @jsx h */
 import App from '../App';
 import renderer from 'react-test-renderer';
 
