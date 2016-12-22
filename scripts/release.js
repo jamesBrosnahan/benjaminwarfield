@@ -1,24 +1,26 @@
-let exec = require('child_process').exec;
-let moment = require('moment');
+// PRAISE BE UNTO TYLER GAW FOR THIS DELICIOUS CODE
+// https://github.com/tylergaw/day-player/blob/3.0.0/scripts/release.js
+// https://tylergaw.com/articles/rewriting-day-player-for-sketch-40
+/* eslint-env node */
+/* eslint-disable strict, no-console */
+'use strict';
 
-let dryRun = process.env.DRY_RUN || false;
-let releaseToEnv = process.argv[2] || 'dev';
-let m = moment();
-
-/*eslint no-console: */
-let tagName = function(e) {
-  let n = m.utc().format('YYYY-MM-DD[T]HH[.]mm[.]ss');
-
-  // Append to prod tags to make them recognizable.
-  if (e === 'prod') {
-    return n + '-prod';
+const version = require('../package.json').version;
+const prompt = require('prompt');
+const exec = require('child_process').exec;
+const dryRun = process.env.DRY_RUN || false;
+const schema = {
+  properties: {
+    confirmation: {
+      required: true,
+      pattern: /^(y|n|yes|no)+$/ig,
+      description: `You are about to release version ${version}, is that OK? (yes|no)`
+    }
   }
-
-  return n;
 };
 
-let pushTag = function(tag) {
-  let cmd = `git push origin ${tag}`;
+const pushTag = tag => {
+  const cmd = `git push origin ${tag}`;
 
   exec(cmd, (error, stdout, stderr) => {
     console.log('Tag pushed to origin', tag);
@@ -28,11 +30,11 @@ let pushTag = function(tag) {
   });
 };
 
-let createTag = function(n) {
-  let cmd = `git tag -a ${n} -m "Releasing version: ${n}"`;
+const createTag = n => {
+  const cmd = `git tag -a ${n} -m "Releasing version: ${n}"`;
 
   if (dryRun) {
-    console.log('Not creating new tag', n);
+    console.log('Pretending to create new tag', n);
   } else {
     exec(cmd, (error, stdout, stderr) => {
       console.log('New git tag created', n);
@@ -44,4 +46,20 @@ let createTag = function(n) {
   }
 };
 
-createTag(tagName(releaseToEnv));
+prompt.start();
+prompt.get(schema, (err, result) => {
+  if (err) {
+    throw new Error(err);
+  }
+
+  const res = result.confirmation.toLowerCase();
+
+  if (res === 'y' || res === 'yes') {
+    createTag(version);
+  } else {
+    console.log('Release aborted');
+    process.exit(0);
+  }
+
+  return true;
+})
