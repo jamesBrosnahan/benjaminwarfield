@@ -8,5 +8,8 @@ export const Contact = () => (
     <div class='callout-sub'>
      Also, if I&#39;m honest, it is more meaningful to me if you have to try a wee bit harder.
     </div>
+    <div class='callout'>
+      So if you are feeling saucy, here is my <a href="https://en.wikipedia.org/wiki/GNU_Privacy_Guard">GPG Key</a>.
+    </div>
   </div>
 );
