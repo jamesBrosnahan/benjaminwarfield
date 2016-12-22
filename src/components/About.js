@@ -25,7 +25,7 @@ export const About = () => (
       This is not comprehensive professional resume, please <Link href="/contact">reach out</Link> if you really want get to know me professionally.
     </div>
     <div class='callout'>
-      I am what could be described as a prolific twitter user, and if you&#39;re brave enough, you can follow me there <a href="https://twitter.com/benjaminws">@benjaminws</a>.
+      I am what could be described as a prolific twitter user, and if you&#39;re brave enough, you can follow me <a href="https://twitter.com/benjaminws">there</a>.
     </div>
     <div class='callout-sub'>
       <strong>Caution:</strong> this timeline is raw af.
