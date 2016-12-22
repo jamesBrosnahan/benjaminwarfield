@@ -14,5 +14,8 @@ export const Contact = () => (
     <div class='callout-sub'>
       If you just want to send me a regular-ass email, you can <a href="mailto:benjaminwarfield -at- gmail.com">click this link, but ugh</a>. Make sure to fix up the address in your client, because the mailto is busted on purpose.
     </div>
+    <div class='callout'>
+      I might also suggest clicking one of the social links on the top nav bar, and connecting with me there.
+    </div>
   </div>
 );
