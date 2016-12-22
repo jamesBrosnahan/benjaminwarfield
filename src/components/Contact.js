@@ -9,7 +9,7 @@ export const Contact = () => (
      Also, if I&#39;m honest, it is more meaningful to me if you have to try a wee bit harder.
     </div>
     <div class='callout'>
-      So if you are feeling saucy, here is my <a href="https://en.wikipedia.org/wiki/GNU_Privacy_Guard">GPG Key</a>.
+      So if you are feeling saucy, here is my <a href="http://pgp.mit.edu:11371/pks/lookup?op=get&search=0x8EA10315498C1579">GPG Key</a>.
     </div>
   </div>
 );
