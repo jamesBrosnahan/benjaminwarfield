@@ -22,6 +22,12 @@ export const Navigation = () => (
           <li><a href="/contact"> Contact</a></li>
           <li><a href="/work">Work</a></li>
         </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://twitter.com/benjaminws"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+          <li><a href="https://github.com/benjaminws"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
+          <li><a href="https://linkedin.com/in/benjaminwarfield"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+          <li><a href="https://facebook.com/benjamins"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+        </ul>
       </div>
     </div>
   </nav>
