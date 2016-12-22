@@ -9,7 +9,7 @@ deploy:
     on:
       tags: true
 
-test: true
+script: true
 
 env:
   global:
