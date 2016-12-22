@@ -9,6 +9,8 @@ deploy:
     on:
       tags: true
 
+test: true
+
 env:
   global:
     BUCKET: www.benjaminwarfield.com
