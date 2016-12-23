@@ -4,6 +4,12 @@ import {Link} from 'preact-router';
 export const About = () => (
   <div class='content'>
     <div class='callout'>
+      <strong>Hello! My name is Benjamin Warfield Smith.</strong>
+    </div>
+    <div class='callout-sub'>
+      You can call me Ben, it&#39;s fine.
+    </div>
+    <div class='callout'>
       I consider myself to be a pretty good <a href="https://en.wikipedia.org/wiki/Software_engineer">Software Engineer</a>.
     </div>
     <div class='callout-sub'>As a professional, sometimes I still fuck up, and that&#39;s ok.</div>
