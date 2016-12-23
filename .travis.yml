@@ -9,7 +9,7 @@ cache:
 
 deploy:
   - provider: script
-    script: npm run deploy -- --access-key-id $AWS_ACCESS_KEY_ID --secret-access-key $AWS_SECRET_ACCESS_KEY --bucket $BUCKET --region us-east-2 --distribution-id $CF_DISTRIBUTION
+    script: npm run deploy
     on:
       tags: true
 
