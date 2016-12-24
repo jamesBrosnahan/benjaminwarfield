@@ -1,0 +1,23 @@
+language: node_js
+
+node_js:
+  - 'v6'
+
+cache:
+  directories:
+    - node_modules
+
+deploy:
+  - provider: script
+    script: npm run deploy
+    on:
+      tags: true
+
+script: true
+
+env:
+  global:
+    - BUCKET=www.benjaminwarfield.com
+    - CF_DISTRIBUTION=E63B3GN2ROJDX
+    - AWS_ACCESS_KEY_ID=AKIAI4ZG2XNDYZJXVJQQ
+    - secure: "D4G5zN2Gh6JjLnNQFS5aqhLvchqMs/+vhqv/2l9KVzQkJWXuOMZPH6dfe4ayi0eTmp0ooD7oh8xiQLpX6U1XEpj744GvJveRO/uuEaYV+xIUm3nm0AoNeawnxQZARmg50cpx/ZUXA7GNpliyWyL5m4YnF5jkRBQ2PNSmt3gLpDLNXoRUgMFKWcx4UrGNnUwEnCrIhcvBp8RK28Xvyzb9gwXwfQ+gXftNQtpvMyveIZD7AdYcVuGFknzw9oV/grFbV4D9w6q5fwN7r5YD0Lby6C22gUaYZKxLlYz+22+DafPxJmrGHrx+lv062yqcJBaPHcbOMQ1akA28z8JzOseW9o8qD5teZ9ZyJ0atFsutPtdf9jiUThDnsfTDVtJK+/puwhcOhsXHs6+2wnRiTAl74y2h/DNQFtIb97EOhggMPR0UiDcvhgODsXG/cnJg4lfOeVG4P9AxqL+CCEDxi9rDHRkOItiZw9rpAetYBCl+EfXO95nRVD7lWWEdi7B4cnCkOFqydV1PjlxE3rl55pkuCqn2o4Cr6KMArafe/Gd/Fq1w4PyZOwHoC9HlNseDtutnr7+wDfmruzGw+Gg24KayBDLlknSaa6dNqxxxqWjhGSmQ1iNBJygI7rJJ/ia4I1/sCe96106I+SC59zngpQKN+WfQ5Vesjqt7olBTbKNoFZM="
