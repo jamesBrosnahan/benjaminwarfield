@@ -15,7 +15,7 @@ const runDeploy = () => {
     --access-key-id ${AWS_ACCESS_KEY_ID} \
     --secret-access-key ${AWS_SECRET_ACCESS_KEY} \
     --bucket ${BUCKET} \
-     --region ${REGION} \
+    --region ${REGION} \
     --distribution-id ${CF_DISTRIBUTION}`;
 
   console.log(`Deploying ${VERSION}...`);
