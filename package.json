@@ -1,6 +1,6 @@
 {
   "name": "benjaminwarfield",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "private": true,
   "devDependencies": {
     "autoprefixer": "6.4.0",
